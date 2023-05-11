@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+	// Remove this when you're ready to deploy
+	images: {
+		domains: ["placehold.co"],
+	},
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

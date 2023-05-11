@@ -11,7 +11,7 @@ const Terms = () => {
 				<ul className='overflow-hidden flex gap-4'>
 					<li className='float-left mr-14'>Términos de Privacidad</li>
 					<li>
-						<a href='facebook.com'>
+						<a href='https://www.facebook.com'>
 							<Image
 								src='/Facebook.svg'
 								width={24}
@@ -21,7 +21,7 @@ const Terms = () => {
 						</a>
 					</li>
 					<li>
-						<a href='instagram.com'>
+						<a href='https://instagram.com'>
 							<Image
 								src='/Instagram.svg'
 								width={24}

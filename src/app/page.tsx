@@ -3,7 +3,8 @@ import React from "react";
 
 import Terms from "./components/Terms";
 import Header from "./components/Header";
-import ContactButton from "./components/ContactButton";
+import ContactButton from "./components/Buttons/ContactButton";
+import KnowMoreButton from "./components/Buttons/KnowMoreButton";
 
 const Hero = () => {
 	return (
@@ -64,7 +65,7 @@ const AboutUs = () => {
 					</div>
 				</div>
 				<br />
-				<ContactButton />
+				<KnowMoreButton />
 			</div>
 		</div>
 	);

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ContactButton from "./ContactButton";
+import ContactButton from "./Buttons/ContactButton";
 
 const Header = () => {
 	return (
@@ -13,7 +13,7 @@ const Header = () => {
 						height={60}
 					/>
 					<a
-						href='#'
+						href='sobre-nosotras'
 						className='  hover:bg-slate-400 hover:bg-opacity-30 h-full px-3 flex items-center font-bold'
 					>
 						Quiénes somos
