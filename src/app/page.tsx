@@ -1,58 +1,9 @@
 import Image from "next/image";
-
 import React from "react";
 
-function ContactButton() {
-	return (
-		<button className='bg-primary text-white rounded-full py-2 px-5 w-fit'>
-			Contáctanos
-		</button>
-	);
-}
-
-const Header = () => {
-	return (
-		<header className='flex flex-col w-full flex-shrink-0 '>
-			<div className='flex justify-between h-16 px-20 gap-x-6'>
-				<nav className='flex h-full items-center px-8 '>
-					<Image
-						src='/logo.svg'
-						alt='Mujeres por Mexico'
-						width={60}
-						height={60}
-					/>
-					<a
-						href='#'
-						className='  hover:bg-slate-400 hover:bg-opacity-30 h-full px-3 flex items-center font-bold'
-					>
-						Quiénes somos
-					</a>
-					<a
-						href='#'
-						className=' font-medium text-slate-500 hover:bg-slate-400 hover:bg-opacity-30 h-full px-3 flex items-center'
-					>
-						Blog
-					</a>
-					<a
-						href='#'
-						className=' font-medium text-slate-500 hover:bg-slate-400 hover:bg-opacity-30 h-full px-3 flex items-center '
-					>
-						Testimonios
-					</a>
-				</nav>
-				<div className='flex h-full items-center px-8  gap-x-3'>
-					<a
-						href='#'
-						className='  hover:bg-slate-400 hover:bg-opacity-30  p-2 flex items-center font-bold rounded-full'
-					>
-						Conoce tu caso
-					</a>
-					<ContactButton />
-				</div>
-			</div>
-		</header>
-	);
-};
+import Terms from "./components/Terms";
+import Header from "./components/Header";
+import ContactButton from "./components/ContactButton";
 
 const Hero = () => {
 	return (
@@ -141,24 +92,38 @@ const Community = () => {
 
 const Contact = () => {
 	return (
-		<div className='flex justify-center items-center w-full'>
-			<div className='flex bg-orange-100 m-72'>
-				<div className='flex flex-col'>
-					<div>Contáctanos</div>
-					<div>
-						Oficinas: C. Ignacio Allende #419 Col. Centro, C.P 31000 Chihuahua,
-						Chih. MX Tel. (614) 410 10 19 Modulo de Atención a Víctimas Centro
-						de Justicia para las Mujeres (CEJUM) Edificio PalomaAngélica Escobar
-						Ledezma C.51° y Rosales #1203 Tel. (614) 429 33 00 ext. 10747
-						Whatsapp (614) 128 31 10
+		<div className='flex justify-center items-center w-full h-[50vh] mb-12'>
+			<div className='flex bg-slate-100 m-72 rounded-2xl p-14 gap-12'>
+				<div className='flex flex-col  gap-3 '>
+					<div className='text-5xl font-bold'>Contáctanos</div>
+					<div className='leading-none text-gray-500 flex flex-col gap-2 text-xl'>
+						<div>
+							<span className='font-bold italic'>
+								Oficinas: <br />
+							</span>
+							C. Ignacio Allende #419 <br />
+							Col. Centro, C.P 31000 <br />
+							Chihuahua, Chih. MX <br />
+							Tel. (614) 410 10 19 <br />
+						</div>
+						<div>
+							<span className='font-bold italic'>
+								Modulo de Atención a Víctimas <br />
+							</span>
+							Centro de Justicia para las Mujeres (CEJUM) <br />
+							Edificio Paloma Angélica Escobar Ledezma <br />
+							C.51° y Rosales #1203 <br />
+							Tel. (614) 429 33 00 ext. 10747 <br />
+							Whatsapp (614) 128 31 10
+						</div>
 					</div>
 				</div>
-				<div>
+				<div className='w-96'>
 					<Image
-						src='/logo.svg'
+						src='/logo_descless.png'
 						alt='Mujeres por Mexico'
-						width={60}
-						height={60}
+						width={612}
+						height={444}
 					/>
 				</div>
 			</div>
@@ -178,6 +143,7 @@ export default function Home() {
 			</div>
 			<Community />
 			<Contact />
+			<Terms />
 		</main>
 	);
 }
