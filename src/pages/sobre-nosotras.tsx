@@ -60,76 +60,68 @@ const Us = () => {
 
 const Objectives = () => {
 	return (
-		<div className='flex flex-col gap-y-10 m-12 pb-12'>
-			<div className='flex  '>
-				<div className='flex-grow w-full'>
-					<div className='bg-primary rounded-3xl relative w-[630px] h-[460px] m-12 '>
-						<Image
-							src='https://placehold.co/630x460/png'
-							alt='right-side-image'
-							fill={true}
-							style={{ objectFit: "cover" }}
-							className='bg-cover relative rounded-3xl z-20 '
-						/>
-						<div className='bg-primary rounded-3xl absolute w-[630px] h-[460px] z-10 top-14 right-14' />
-					</div>
-				</div>
-				<div className='flex-shrink flex justify-center flex-col '>
-					<p className='text-4xl font-semibold text-primary'>Misión</p>
-					<p className='w-3/4 '>
-						Contribuir a una sociedad bien informada, organizada, participativa
-						y responsable que influya en las decisiones que la afectan y pueda
-						elevar su calidad de vida.
-					</p>
+		<div className=' grid grid-cols-2 mb-24'>
+			<div className='bg-primary rounded-3xl relative w-[630px] h-[460px] m-12 ml-32 '>
+				<div className='flex items-center justify-center'>
+					<Image
+						src='https://placehold.co/630x460/png'
+						alt='right-side-image'
+						fill={true}
+						style={{ objectFit: "cover" }}
+						className='bg-cover relative rounded-3xl z-20 '
+					/>
+					<div className='bg-primary rounded-3xl absolute w-[630px] h-[460px] z-10 top-14 right-14' />
 				</div>
 			</div>
-			<div className='flex  '>
-				<div className='flex-shrink flex justify-center flex-col ml-12 mr-16'>
-					<p className='text-4xl font-semibold text-secondary'>
-						Objetivo Social
-					</p>
-					<p className=''>
-						Colaborar con organismos municipales, estatales, nacionales e
-						internacionales con el propósito común de la defensa de los derechos
-						humanos para una vida digna y libre de violencia.
-					</p>
-				</div>
-				<div className='flex-grow '>
-					<div className='bg-secondary rounded-3xl relative w-[630px] h-[460px] m-12 '>
-						<Image
-							src='https://placehold.co/630x460/png'
-							alt='right-side-image'
-							fill={true}
-							style={{ objectFit: "cover" }}
-							className='bg-cover relative rounded-3xl z-20 '
-						/>
-						<div className='bg-secondary rounded-3xl absolute w-[630px] h-[460px] z-10 top-14 right-14' />
-					</div>
-				</div>
+			<div className='flex flex-col items-start justify-center'>
+				<p className='text-4xl xl:text-6xl font-semibold text-primary'>
+					Misión
+				</p>
+				<p className='w-3/4 xl:text-3xl py-5'>
+					Contribuir a una sociedad bien informada, organizada, participativa y
+					responsable que influya en las decisiones que la afectan y pueda
+					elevar su calidad de vida.
+				</p>
 			</div>
-			<div className='flex  '>
-				<div className='flex-grow w-full'>
-					<div className='bg-primary rounded-3xl relative w-[630px] h-[460px] m-12 '>
-						<Image
-							src='https://placehold.co/630x460/png'
-							alt='right-side-image'
-							fill={true}
-							style={{ objectFit: "cover" }}
-							className='bg-cover relative rounded-3xl z-20 '
-						/>
-						<div className='bg-primary rounded-3xl absolute w-[630px] h-[460px] z-10 top-14 right-14' />
-					</div>
-				</div>
-				<div className='flex-shrink flex justify-center flex-col '>
-					<p className='text-4xl font-semibold text-primary'>
-						Objetivo del Acompañamiento
-					</p>
-					<p className='w-3/4 '>
-						Un proyecto muy importante apoyado por la FECHAC, A.C. es el
-						Acompañamiento Solidario de Familias en Situación de Violencia con
-						el objetivo de acceder a la justicia evitando la revictimización.{" "}
-					</p>
-				</div>
+			<div className='flex flex-col text-left justify-center ml-32'>
+				<p className='text-4xl xl:text-6xl font-semibold text-secondary'>
+					Objetivo Social
+				</p>
+				<p className='xl:text-3xl py-5 xl:w-3/4 '>
+					Colaborar con organismos municipales, estatales, nacionales e
+					internacionales con el propósito común de la defensa de los derechos
+					humanos para una vida digna y libre de violencia.
+				</p>
+			</div>
+			<div className='bg-secondary rounded-3xl relative w-[630px] h-[460px] m-12 '>
+				<Image
+					src='https://placehold.co/630x460/png'
+					alt='right-side-image'
+					fill={true}
+					style={{ objectFit: "cover" }}
+					className='bg-cover relative rounded-3xl z-20 '
+				/>
+				<div className='bg-secondary rounded-3xl absolute w-[630px] h-[460px] z-10 top-14 right-14' />
+			</div>
+			<div className='bg-primary rounded-3xl relative w-[630px] h-[460px] m-12 ml-32 '>
+				<Image
+					src='https://placehold.co/630x460/png'
+					alt='right-side-image'
+					fill={true}
+					style={{ objectFit: "cover" }}
+					className='bg-cover relative rounded-3xl z-20 '
+				/>
+				<div className='bg-primary rounded-3xl absolute w-[630px] h-[460px] z-10 top-14 right-14' />
+			</div>
+			<div className='flex flex-col text-left justify-center'>
+				<p className='text-4xl font-semibold text-primary xl:text-6xl'>
+					Objetivo del Acompañamiento
+				</p>
+				<p className='w-3/4 xl:text-3xl py-5'>
+					Un proyecto muy importante apoyado por la FECHAC, A.C. es el
+					Acompañamiento Solidario de Familias en Situación de Violencia con el
+					objetivo de acceder a la justicia evitando la revictimización.
+				</p>
 			</div>
 		</div>
 	);

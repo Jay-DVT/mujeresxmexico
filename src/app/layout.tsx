@@ -20,7 +20,7 @@ export default function RootLayout({
 				<title>{metadata.title}</title>
 				<meta name='description' content={metadata.description} />
 			</Head>
-			<body className={inter.className}>{children}</body>{" "}
+			<div className={inter.className}>{children}</div>
 		</html>
 	);
 }
