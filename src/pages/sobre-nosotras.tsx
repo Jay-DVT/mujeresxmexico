@@ -14,15 +14,14 @@ const Us = () => {
 					<div className='absolute top-0 right-32 w-full h-full bg-secondary ' />
 					<div className='absolute top-0 left-32 w-full h-full bg-secondary rounded-t-full' />
 				</div>
-				<div className='bg-secondary w-5/6 h-96 rounded-3xl relative'>
-					<Image
-						src='https://placehold.co/277x377/png'
-						alt='right-side-image'
-						fill={true}
-						style={{ objectFit: "cover" }}
-						className='bg-cover relative rounded-3xl z-20'
-					/>
-				</div>
+				<div
+					className='bg-secondary w-5/6 h-96 rounded-3xl relative'
+					style={{
+						backgroundImage: `url(/Image/df90237f-f92c-47a8-a71b-8a5d4f885180.jpg)`,
+						backgroundSize: "cover",
+						backgroundPosition: "center",
+					}}
+				></div>
 				<div className='bg-secondary rounded-full w-36 h-36' />
 			</div>
 			{/* Central */}
@@ -40,15 +39,14 @@ const Us = () => {
 			<div className='h-fit w-96 flex flex-col justify-center items-center flex-shrink gap-y-16'>
 				<div className='bg-primary rounded-full w-36 h-36' />
 
-				<div className='bg-primary w-5/6 h-96 rounded-3xl relative'>
-					<Image
-						src='https://placehold.co/277x377/png'
-						alt='right-side-image'
-						fill={true}
-						style={{ objectFit: "cover" }}
-						className='bg-cover relative rounded-3xl z-20'
-					/>
-				</div>
+				<div
+					className='bg-primary w-5/6 h-96 rounded-3xl relative'
+					style={{
+						backgroundImage: `url(/Image/f920b122-84b8-46ec-ae13-a5c3d35b6911.jpg)`,
+						backgroundSize: "cover",
+						backgroundPosition: "start",
+					}}
+				></div>
 				<div className='w-full h-20 bg-primary relative '>
 					<div className='absolute top-0 left-32 w-full h-full bg-primary ' />
 					<div className='absolute top-0 right-32 w-full h-full bg-primary rounded-b-full' />
@@ -61,17 +59,16 @@ const Us = () => {
 const Objectives = () => {
 	return (
 		<div className=' grid grid-cols-2 mb-24'>
-			<div className='bg-primary rounded-3xl relative w-[630px] h-[460px] m-12 ml-32 '>
-				<div className='flex items-center justify-center'>
-					<Image
-						src='https://placehold.co/630x460/png'
-						alt='right-side-image'
-						fill={true}
-						style={{ objectFit: "cover" }}
-						className='bg-cover relative rounded-3xl z-20 '
-					/>
-					<div className='bg-primary rounded-3xl absolute w-[630px] h-[460px] z-10 top-14 right-14' />
-				</div>
+			<div className='bg-primary rounded-3xl relative w-[630px] h-[460px] m-12 ml-32 z-10'>
+				<div className='bg-primary rounded-3xl absolute w-[630px] h-[460px] z-0 top-14 right-14' />
+				<div
+					className='w-full h-full absolute z-20 rounded-3xl'
+					style={{
+						backgroundImage: `url(/Image/00ca22f2-08af-43d6-b57d-18a57736fdbe.jpg)`,
+						backgroundSize: "cover",
+						backgroundPosition: "start",
+					}}
+				></div>
 			</div>
 			<div className='flex flex-col items-start justify-center'>
 				<p className='text-4xl xl:text-6xl font-semibold text-primary'>
@@ -94,24 +91,26 @@ const Objectives = () => {
 				</p>
 			</div>
 			<div className='bg-secondary rounded-3xl relative w-[630px] h-[460px] m-12 '>
-				<Image
-					src='https://placehold.co/630x460/png'
-					alt='right-side-image'
-					fill={true}
-					style={{ objectFit: "cover" }}
-					className='bg-cover relative rounded-3xl z-20 '
-				/>
-				<div className='bg-secondary rounded-3xl absolute w-[630px] h-[460px] z-10 top-14 right-14' />
+				<div className='bg-secondary rounded-3xl absolute w-[630px] h-[460px] z-0 top-14 right-14' />
+				<div
+					className='w-full h-full absolute z-20 rounded-3xl'
+					style={{
+						backgroundImage: `url(/Image/f1a16f72-5436-4929-a5a9-c7a0940f853c.jpg)`,
+						backgroundSize: "cover",
+						backgroundPosition: "start",
+					}}
+				></div>
 			</div>
 			<div className='bg-primary rounded-3xl relative w-[630px] h-[460px] m-12 ml-32 '>
-				<Image
-					src='https://placehold.co/630x460/png'
-					alt='right-side-image'
-					fill={true}
-					style={{ objectFit: "cover" }}
-					className='bg-cover relative rounded-3xl z-20 '
-				/>
-				<div className='bg-primary rounded-3xl absolute w-[630px] h-[460px] z-10 top-14 right-14' />
+				<div className='bg-primary rounded-3xl absolute w-[630px] h-[460px] z-0 top-14 right-14' />
+				<div
+					className='w-full h-full absolute z-20 rounded-3xl'
+					style={{
+						backgroundImage: `url(/Image/d24a56ec-6aee-4bf7-a676-9c7ab2a164ae.jpg)`,
+						backgroundSize: "cover",
+						backgroundPosition: "start",
+					}}
+				></div>
 			</div>
 			<div className='flex flex-col text-left justify-center'>
 				<p className='text-4xl font-semibold text-primary xl:text-6xl'>

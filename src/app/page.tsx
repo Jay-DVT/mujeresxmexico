@@ -79,14 +79,34 @@ const Community = () => {
 				Únete a la comunidad
 			</div>
 			<div className='flex gap-x-20 justify-center pb-20'>
-				<div className='lg:h-72 w-1/3 bg-slate-700 rounded-3xl  text-white flex items-center justify-center cursor-pointer'>
-					<div className='rounded-3xl text-3xl font-semibold'>Testimonios</div>
-				</div>
-				<div className='lg:h-72 w-1/3 bg-slate-700 rounded-3xl  text-white flex items-center justify-center cursor-pointer'>
-					<div className='rounded-3xl text-3xl font-semibold'>
-						Blog Educativo
+				<a href='testimonios'>
+					<div
+						className='lg:h-72 w-[530px] rounded-3xl text-white flex items-center justify-center cursor-pointer overflow-hidden relative'
+						style={{
+							backgroundImage: `url(/Image/df90237f-f92c-47a8-a71b-8a5d4f885180.jpg)`,
+							backgroundSize: "cover",
+							backgroundPosition: "center",
+						}}
+					>
+						<div className='rounded-3xl text-3xl font-semibold z-10'>
+							Testimonios
+						</div>
 					</div>
-				</div>
+				</a>
+				<a href='blog'>
+					<div
+						className='lg:h-72 w-[530px] rounded-3xl text-white flex items-center justify-center cursor-pointer overflow-hidden relative'
+						style={{
+							backgroundImage: `url(/Image/7b88dbf9-bd4d-4b8d-83d7-9df8e713f2d7.jpg)`,
+							backgroundSize: "cover",
+							backgroundPosition: "center",
+						}}
+					>
+						<div className='rounded-3xl text-3xl font-semibold z-10'>
+							Blog Educativo
+						</div>
+					</div>
+				</a>
 			</div>
 		</div>
 	);
