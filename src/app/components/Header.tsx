@@ -5,7 +5,7 @@ import Link from "next/link";
 const Header = () => {
 	return (
 		<header className='flex flex-col w-full flex-shrink-0 '>
-			<div className='flex justify-between h-16 px-20 gap-x-6'>
+			<div className='flex justify-between h-24 px-20 gap-x-6'>
 				<nav className='flex h-full items-center px-8 '>
 					<Link href='/'>
 						<Image
@@ -22,13 +22,13 @@ const Header = () => {
 						Quiénes somos
 					</a>
 					<a
-						href='#'
+						href='blog'
 						className=' font-medium text-slate-500 hover:bg-slate-400 hover:bg-opacity-30 h-full px-3 flex items-center'
 					>
 						Blog
 					</a>
 					<a
-						href='#'
+						href='testimonios'
 						className=' font-medium text-slate-500 hover:bg-slate-400 hover:bg-opacity-30 h-full px-3 flex items-center '
 					>
 						Testimonios
