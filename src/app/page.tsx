@@ -32,7 +32,13 @@ const Hero = () => {
 				</div>
 			</div>
 			<div className='flex items-center justify-start lg:h-fill lg:w-1/2 '>
-				<Image src='/Container.svg' height={700} width={700} alt='Mosaico' />
+				<Image
+					src='/Container.svg'
+					height={700}
+					width={700}
+					alt='Mosaico'
+					priority
+				/>
 			</div>
 		</div>
 	);

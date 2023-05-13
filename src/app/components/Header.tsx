@@ -9,7 +9,7 @@ const Header = () => {
 				<nav className='flex h-full items-center px-8 '>
 					<Link href='/'>
 						<Image
-							src='/logo.png'
+							src='/favicon.png'
 							alt='Mujeres por Mexico'
 							width={60}
 							height={60}

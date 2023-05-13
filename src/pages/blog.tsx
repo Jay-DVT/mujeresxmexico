@@ -11,17 +11,21 @@ interface BlogCardProps {
 
 const BlogCard = (props: BlogCardProps) => {
 	return (
-		<div className='w-full flex items-center justify-start flex-col pb-6 text-center'>
+		<div className='w-full pb-6 text-center '>
 			<a href=''>
-				<div className='w-96 relative h-72 mb-4'>
-					<Image
-						src={`/Image/${props.image}`}
-						alt={props.title}
-						fill={true}
-						className='rounded-3xl'
-					/>
+				<div className='flex justify-center items-center'>
+					<div className='w-96 relative h-72 mb-4'>
+						<Image
+							src={`/Image/${props.image}`}
+							alt={props.title}
+							fill={true}
+							className='rounded-3xl'
+						/>
+					</div>
 				</div>
-				<div className='w-5/6 text-2xl font-semibold'>{props.title}</div>
+				<div className='flex justify-center'>
+					<div className='w-5/6 text-2xl font-semibold'>{props.title}</div>
+				</div>
 			</a>
 		</div>
 	);

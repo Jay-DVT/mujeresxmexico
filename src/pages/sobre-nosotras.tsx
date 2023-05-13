@@ -97,7 +97,7 @@ const Objectives = () => {
 					style={{
 						backgroundImage: `url(/Image/f1a16f72-5436-4929-a5a9-c7a0940f853c.jpg)`,
 						backgroundSize: "cover",
-						backgroundPosition: "start",
+						backgroundPosition: "center",
 					}}
 				></div>
 			</div>
@@ -108,7 +108,7 @@ const Objectives = () => {
 					style={{
 						backgroundImage: `url(/Image/d24a56ec-6aee-4bf7-a676-9c7ab2a164ae.jpg)`,
 						backgroundSize: "cover",
-						backgroundPosition: "start",
+						backgroundPosition: "center",
 					}}
 				></div>
 			</div>
