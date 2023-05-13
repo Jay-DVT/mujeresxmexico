@@ -35,30 +35,37 @@ function SignIn(props: Props) {
 	}
 
 	return (
-		<main className='flex min-h-screen h-screen flex-col items-center'>
+		<main className='flex h-screen items-center justify-center'>
 			<Head>
 				<title>Iniciar sesión</title>
 			</Head>
-			<div className=''>
-				<form onSubmit={handleSubmit} className='w-64'>
+			<div className='border-2 p-7 border-secondary rounded-lg max-w-lg'>
+				<div>
+					<h1 className='text-2xl font-semibold'>Iniciar sesión</h1>
+					<p className='mb-5 text-gray-500'>
+						Ingresa tu folio y contraseña para <br /> acceder al seguimiento de
+						tu caso
+					</p>
+				</div>
+				<form onSubmit={handleSubmit} className='w-64 flex flex-col gap-2'>
 					<input
 						type='text'
-						placeholder='Folio'
+						placeholder='Folio-Clave'
 						value={invoice}
 						onChange={(e) => setInvoice(e.target.value)}
-						className='border border-gray-300 rounded-md p-2 mb-2 w-full'
+						autoFocus
+						className='border border-gray-300 rounded-md p-2 mb-2 w-full focus:outline-none focus:border-secondary'
 					/>
 					<input
 						type='password'
 						placeholder='Contraseña'
 						value={password}
 						onChange={(e) => setPassword(e.target.value)}
-						className='border border-gray-300 rounded-md p-2 mb-2 w-full'
+						className='border border-gray-300 rounded-md p-2 mb-2 w-full focus:outline-none focus:border-secondary'
 					/>
-					{error && <p className='text-red-500 mb-2'>{error}</p>}
 					<button
 						type='submit'
-						className='bg-primary hover:bg-secondary text-white font-semibold py-2 px-4 rounded-md'
+						className='bg-primary hover:bg-secondary text-white font-semibold py-2 px-4 rounded-md '
 					>
 						Iniciar sesión
 					</button>
