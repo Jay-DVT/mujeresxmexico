@@ -1,5 +1,6 @@
 import "../app/styles/globals.css";
 import Header from "@/app/components/Header";
+import Terms from "@/app/components/Terms";
 import Head from "next/head";
 import React from "react";
 
@@ -12,7 +13,7 @@ interface TestimonialCardProps {
 const TestimonialCard = (props: TestimonialCardProps) => {
 	return (
 		<div
-			className={`bg-${props.color} h-fit flex flex-col justify-center mx-24 rounded-2xl mb-8 w-1/2`}
+			className={`bg-${props.color} h-fit flex flex-col justify-center mx-24 rounded-2xl mb-8 w-5/6 md:w-1/2`}
 		>
 			<div>
 				<p className='text-2xl text-white font-semibold p-4'>
@@ -27,6 +28,21 @@ const TestimonialCard = (props: TestimonialCardProps) => {
 };
 
 export default function Testimonials() {
+	const testimonials = [
+		{
+			color: "primary",
+			name: "Luisa",
+			testimonial:
+				"La organización me ayudó bastante en el proceso de mi demanda. Mi caso cerro hace unas semanas y estoy realmente agradecida con las mujeres que forman parte de esta organización que me acompañaron en cada paso de mi proceso. Mujeres, no se queden calladas!! Luchen por sus derechos y por la vida que se merecen.",
+		},
+		{
+			color: "secondary",
+			name: "María",
+			testimonial:
+				"La organización me ayudó bastante en el proceso de mi demanda. Mi caso cerro hace unas semanas y estoy realmente agradecida con las mujeres que forman parte de esta organización que me acompañaron en cada paso de mi proceso. Mujeres, no se queden calladas!! Luchen por sus derechos y por la vida que se merecen.",
+		},
+	];
+
 	return (
 		<main className='flex min-h-screen  flex-col items-center'>
 			<Head>
@@ -46,13 +62,14 @@ export default function Testimonials() {
 					</button>
 				</div>
 			</div>
-			{/* Delete Test Cards */}
-			<TestimonialCard
-				color='primary'
-				name='Luisa'
-				testimonial='La organización me ayudó bastante en el proceso de mi demanda. Mi caso cerro hace unas semanas y estoy realmente agradecida con las mujeres que forman parte de esta organización que me acompañaron en cada paso de mi proceso. Mujeres, no se queden calladas!! Luchen por sus derechos y por la vida que se merecen.'
-			/>
-			<TestimonialCard color='secondary' name='María' testimonial='' />
+			{testimonials.map((testimonial) => (
+				<TestimonialCard
+					color={testimonial.color}
+					name={testimonial.name}
+					testimonial={testimonial.testimonial}
+				/>
+			))}
+			<Terms />
 		</main>
 	);
 }
