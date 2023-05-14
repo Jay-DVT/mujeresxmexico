@@ -81,14 +81,14 @@ const AboutUs = () => {
 
 const Community = () => {
 	return (
-		<div className='flex flex-col  '>
-			<div className='text-secondary font-semibold text-6xl text-center py-20'>
+		<div className='flex flex-col md:pb-0 pb-5'>
+			<div className='text-secondary font-semibold text-3xl md:text-6xl text-center md:py-20 py-10'>
 				Únete a la comunidad
 			</div>
-			<div className='flex gap-x-20 justify-center pb-20'>
+			<div className='flex gap-x-20 justify-center pb-20 md:flex-row flex-col gap-y-5'>
 				<a href='testimonios'>
 					<div
-						className='lg:h-72 md:w-[530px] rounded-3xl text-white flex items-center justify-center cursor-pointer overflow-hidden relative'
+						className='md:h-72 h-32 md:w-[530px] rounded-3xl text-white flex items-center justify-center cursor-pointer overflow-hidden relative'
 						style={{
 							backgroundImage: `url(/Image/df90237f-f92c-47a8-a71b-8a5d4f885180.jpg)`,
 							backgroundSize: "cover",
@@ -102,7 +102,7 @@ const Community = () => {
 				</a>
 				<a href='blog'>
 					<div
-						className='lg:h-72 md:w-[530px] rounded-3xl text-white flex items-center justify-center cursor-pointer overflow-hidden relative'
+						className='md:h-72 h-32 md:w-[530px] rounded-3xl text-white flex items-center justify-center cursor-pointer overflow-hidden relative'
 						style={{
 							backgroundImage: `url(/Image/7b88dbf9-bd4d-4b8d-83d7-9df8e713f2d7.jpg)`,
 							backgroundSize: "cover",
@@ -121,11 +121,11 @@ const Community = () => {
 
 const Contact = () => {
 	return (
-		<div className='flex justify-center items-center  h-[50vh] mb-12'>
-			<div className='flex bg-slate-100 m-72 rounded-2xl p-14 gap-12'>
+		<div className='flex justify-center items-center  md:h-[50vh] md:mb-12 '>
+			<div className='flex bg-slate-100 md:m-72 rounded-2xl p-14 gap-6 md:gap-12 md:flex-row flex-col-reverse'>
 				<div className='flex flex-col  gap-3 '>
-					<div className='text-5xl font-bold'>Contáctanos</div>
-					<div className='leading-none text-gray-500 flex flex-col gap-2 text-xl'>
+					<div className='text-2xl md:text-5xl font-bold'>Contáctanos</div>
+					<div className='leading-none text-gray-500 flex flex-col gap-2 text-base md:text-xl'>
 						<div>
 							<span className='font-bold italic'>
 								Oficinas: <br />
@@ -147,7 +147,7 @@ const Contact = () => {
 						</div>
 					</div>
 				</div>
-				<div className='md:w-96 w-44'>
+				<div className='md:w-96 w-64'>
 					<Image
 						src='/logo_descless.png'
 						alt='Mujeres por Mexico'
