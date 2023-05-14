@@ -9,7 +9,7 @@ import KnowMoreButton from "./components/buttons/KnowMoreButton";
 
 const Hero = () => {
 	return (
-		<div className='flex flex-grow justify-center md:inline-flex flex-col'>
+		<div className='flex flex-grow justify-center md:inline-flex flex-col md:flex-row'>
 			<div className='flex flex-col  justify-center text-left  md:w-1/2 items-center '>
 				<div className='md:w-3/4 lg:ml-48 md:pr-36 md:h-96 flex flex-col justify-evenly md:p-0 p-4 h-fit'>
 					<span className='uppercase'>Mujeres x MÉxico CUU</span>
@@ -121,8 +121,8 @@ const Community = () => {
 
 const Contact = () => {
 	return (
-		<div className='flex justify-center items-center  md:h-[50vh] md:mb-12 '>
-			<div className='flex bg-slate-100 md:m-72 rounded-2xl p-14 gap-6 md:gap-12 md:flex-row flex-col-reverse'>
+		<div className='flex justify-center items-center mb-6'>
+			<div className='flex bg-slate-100  rounded-2xl p-14 gap-6 md:gap-12 md:flex-row flex-col-reverse justify-center items-center'>
 				<div className='flex flex-col  gap-3 '>
 					<div className='text-2xl md:text-5xl font-bold'>Contáctanos</div>
 					<div className='leading-none text-gray-500 flex flex-col gap-2 text-base md:text-xl'>

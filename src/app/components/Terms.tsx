@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Terms = () => {
 	return (
-		<div className='bg-secondary flex justify-between text-white  md:p-32 p-6 md:flex-row flex-col gap-y-4 w-screen'>
+		<div className='bg-secondary flex justify-between text-white  md:p-24 p-6 md:flex-row flex-col gap-y-4  w-full'>
 			<div>
 				<span>&#169;</span>
 				Mujeres Por México CUU
