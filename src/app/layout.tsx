@@ -19,6 +19,7 @@ export default function RootLayout({
 			<Head>
 				<title>{metadata.title}</title>
 				<meta name='description' content={metadata.description} />
+				<meta name='viewport' content='width=device-width, initial-scale=1' />
 			</Head>
 			<div className={inter.className}>{children}</div>
 		</html>

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import Header from "../app/components/Header";
 import Terms from "../app/components/Terms";
-import KnowMoreButton from "../app/components/Buttons/KnowMoreButton";
+import KnowMoreButton from "../app/components/buttons/KnowMoreButton";
 import Head from "next/head";
 
 const Us = () => {

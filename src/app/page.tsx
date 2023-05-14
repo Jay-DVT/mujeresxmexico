@@ -4,24 +4,24 @@ import React from "react";
 
 import Terms from "./components/Terms";
 import Header from "./components/Header";
-import ContactButton from "./components/Buttons/ContactButton";
-import KnowMoreButton from "./components/Buttons/KnowMoreButton";
+import ContactButton from "./components/buttons/ContactButton";
+import KnowMoreButton from "./components/buttons/KnowMoreButton";
 
 const Hero = () => {
 	return (
-		<div className='flex flex-grow justify-center '>
-			<div className='flex flex-col  justify-center text-left  w-1/2 items-center '>
-				<div className='w-3/4 lg:ml-48 pr-36 h-96 flex flex-col justify-evenly'>
+		<div className='flex flex-grow justify-center md:inline-flex flex-col'>
+			<div className='flex flex-col  justify-center text-left  md:w-1/2 items-center '>
+				<div className='md:w-3/4 lg:ml-48 md:pr-36 md:h-96 flex flex-col justify-evenly md:p-0 p-4 h-fit'>
 					<span className='uppercase'>Mujeres x MÉxico CUU</span>
 					<br />
 					<div className='flex flex-col gap-y-3'>
 						<div>
-							<span className=' text-6xl font-semibold'>
+							<span className='text-4xl md:text-6xl font-semibold'>
 								Vive una vida libre, mujer.
 							</span>
 						</div>
 						<div>
-							<span className=' text-xl text-slate-500'>
+							<span className='text-base md:text-xl text-slate-500'>
 								Somos una organización defensora de los derechos humanos. Te
 								brindamos asesoría jurídica y acompañamiento durante tu proceso.
 							</span>
@@ -31,13 +31,14 @@ const Hero = () => {
 					<ContactButton />
 				</div>
 			</div>
-			<div className='flex items-center justify-start lg:h-fill lg:w-1/2 '>
+			<div className='flex items-center justify-center md:justify-start lg:h-fill lg:w-1/2 '>
 				<Image
 					src='/Container.svg'
 					height={700}
 					width={700}
 					alt='Mosaico'
 					priority
+					className='hidden md:block'
 				/>
 			</div>
 		</div>
@@ -47,20 +48,20 @@ const Hero = () => {
 const AboutUs = () => {
 	return (
 		<div className='flex bg-secondary h-full items-center '>
-			<div className='flex items-center justify-end lg:h-fill lg:w-1/2 pr-12 flex-shrink-0'>
+			<div className='hidden md:flex items-center justify-end lg:h-fill lg:w-1/2 pr-12 flex-shrink-0 '>
 				<Image src='/about_us.svg' height={650} width={650} alt='Mosaico' />
 			</div>
-			<div className=' text-white flex flex-col justify-evenly mx-28 pr-56'>
+			<div className=' text-white flex flex-col justify-evenly md:mx-28 md:pr-56 md:p-0 p-6'>
 				<span className='uppercase text-sm'>QUIÉNES SOMOS</span>
 				<br />
 				<div className='flex flex-col gap-y-3'>
 					<div>
-						<span className=' text-6xl font-semibold'>
+						<span className='text-3xl md:text-6xl font-semibold'>
 							Trabajamos por los derechos de las mujeres en México.
 						</span>
 					</div>
 					<div>
-						<span className=' text-base'>
+						<span className='text-sm md:text-base'>
 							Mujeres por México en Chihuahua, A.C., nace en 1995 con un gran
 							compromiso social, especialmente con los grupos más
 							vulnerables.Trabajamos y luchamos por la formación integral de las
@@ -80,14 +81,14 @@ const AboutUs = () => {
 
 const Community = () => {
 	return (
-		<div className='flex flex-col w-full '>
+		<div className='flex flex-col  '>
 			<div className='text-secondary font-semibold text-6xl text-center py-20'>
 				Únete a la comunidad
 			</div>
 			<div className='flex gap-x-20 justify-center pb-20'>
 				<a href='testimonios'>
 					<div
-						className='lg:h-72 w-[530px] rounded-3xl text-white flex items-center justify-center cursor-pointer overflow-hidden relative'
+						className='lg:h-72 md:w-[530px] rounded-3xl text-white flex items-center justify-center cursor-pointer overflow-hidden relative'
 						style={{
 							backgroundImage: `url(/Image/df90237f-f92c-47a8-a71b-8a5d4f885180.jpg)`,
 							backgroundSize: "cover",
@@ -101,7 +102,7 @@ const Community = () => {
 				</a>
 				<a href='blog'>
 					<div
-						className='lg:h-72 w-[530px] rounded-3xl text-white flex items-center justify-center cursor-pointer overflow-hidden relative'
+						className='lg:h-72 md:w-[530px] rounded-3xl text-white flex items-center justify-center cursor-pointer overflow-hidden relative'
 						style={{
 							backgroundImage: `url(/Image/7b88dbf9-bd4d-4b8d-83d7-9df8e713f2d7.jpg)`,
 							backgroundSize: "cover",
@@ -120,7 +121,7 @@ const Community = () => {
 
 const Contact = () => {
 	return (
-		<div className='flex justify-center items-center w-full h-[50vh] mb-12'>
+		<div className='flex justify-center items-center  h-[50vh] mb-12'>
 			<div className='flex bg-slate-100 m-72 rounded-2xl p-14 gap-12'>
 				<div className='flex flex-col  gap-3 '>
 					<div className='text-5xl font-bold'>Contáctanos</div>
@@ -146,7 +147,7 @@ const Contact = () => {
 						</div>
 					</div>
 				</div>
-				<div className='w-96'>
+				<div className='md:w-96 w-44'>
 					<Image
 						src='/logo_descless.png'
 						alt='Mujeres por Mexico'
@@ -161,12 +162,12 @@ const Contact = () => {
 
 export default function Home() {
 	return (
-		<main className='flex min-h-screen flex-col items-center '>
-			<div className='flex flex-col min-h-screen 	'>
+		<main className='flex min-h-screen flex-col items-center'>
+			<div className='flex flex-col h-screen 	'>
 				<Header />
 				<Hero />
 			</div>
-			<div className='h-screen w-full'>
+			<div className='h-screen'>
 				<AboutUs />
 			</div>
 			<Community />

@@ -1,11 +1,20 @@
 import Image from "next/image";
-import ContactButton from "./Buttons/ContactButton";
+import ContactButton from "./buttons/ContactButton";
 import Link from "next/link";
 
 const Header = () => {
 	return (
 		<header className='flex flex-col w-full flex-shrink-0 '>
-			<div className='flex justify-between h-24 px-20 gap-x-6'>
+			<div className='w-full relative h-1 md:hidden'>
+				<Image
+					src='/Sidebar.png'
+					width={40}
+					height={40}
+					alt='Mujeres por Mexico menu'
+					className='absolute top-5 right-5 z-0'
+				/>
+			</div>
+			<div className='hidden md:flex justify-between h-24 px-3 lg:px-20 lg:gap-x-6 lg:text-base text-sm'>
 				<nav className='flex h-full items-center px-8 '>
 					<Link href='/'>
 						<Image
