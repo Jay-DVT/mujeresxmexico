@@ -1,3 +1,4 @@
+import Terms from "@/app/components/Terms";
 import "../app/styles/globals.css";
 import Header from "@/app/components/Header";
 import Head from "next/head";
@@ -14,7 +15,7 @@ const BlogCard = (props: BlogCardProps) => {
 		<div className='w-full pb-6 text-center '>
 			<a href=''>
 				<div className='flex justify-center items-center'>
-					<div className='w-96 relative h-72 mb-4'>
+					<div className='xl:w-96 relative xl:h-72 mb-4 w-[200px] h-[150px]'>
 						<Image
 							src={`/Image/${props.image}`}
 							alt={props.title}
@@ -24,7 +25,9 @@ const BlogCard = (props: BlogCardProps) => {
 					</div>
 				</div>
 				<div className='flex justify-center'>
-					<div className='w-5/6 text-2xl font-semibold'>{props.title}</div>
+					<div className='w-5/6 lg:text-2xl text-xl font-semibold'>
+						{props.title}
+					</div>
 				</div>
 			</a>
 		</div>
@@ -66,19 +69,22 @@ export default function Testimonials() {
 			</Head>
 			<Header />
 			<div className='flex items-center justify-center h-fit'>
-				<div className='flex flex-col items-center gap-5 p-24 '>
-					<p className='font-semibold text-6xl text-primary'>Blog Educativo</p>
+				<div className='flex flex-col items-center gap-5 px-24 pb-12 md:p-24 pt-245'>
+					<p className='font-semibold text-6xl text-primary text-center'>
+						Blog Educativo
+					</p>
 					<p className='text-gray-400 text-center'>
 						Creamos este espacio para compartirle información que es sumamente
 						importante conocer.
 					</p>
 				</div>
 			</div>
-			<div className='grid grid-cols-3 w-5/6 h-[600px]'>
+			<div className='grid grid-cols-2 md:grid-cols-3 w-screen  md:w-5/6 mb-7 '>
 				{blogCards.map((card) => (
-					<BlogCard image={card.image} title={card.title} />
+					<BlogCard image={card.image} title={card.title} key={card.title} />
 				))}
 			</div>
+			<Terms />
 		</main>
 	);
 }
