@@ -5,7 +5,8 @@ import Head from "next/head";
 import React from "react";
 
 interface TestimonialCardProps {
-	color: "primary" | "secondary";
+	key: number;
+	color: string;
 	name: string;
 	testimonial: string;
 }
@@ -30,12 +31,14 @@ const TestimonialCard = (props: TestimonialCardProps) => {
 export default function Testimonials() {
 	const testimonials = [
 		{
+			key: 1,
 			color: "primary",
 			name: "Luisa",
 			testimonial:
 				"La organización me ayudó bastante en el proceso de mi demanda. Mi caso cerro hace unas semanas y estoy realmente agradecida con las mujeres que forman parte de esta organización que me acompañaron en cada paso de mi proceso. Mujeres, no se queden calladas!! Luchen por sus derechos y por la vida que se merecen.",
 		},
 		{
+			key: 2,
 			color: "secondary",
 			name: "María",
 			testimonial:
@@ -67,6 +70,7 @@ export default function Testimonials() {
 					color={testimonial.color}
 					name={testimonial.name}
 					testimonial={testimonial.testimonial}
+					key={testimonial.key}
 				/>
 			))}
 			<Terms />
